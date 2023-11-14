@@ -25,11 +25,11 @@
 
             
             <div class="dropdown-list" id="drop">
-                <a href="#events">Events</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#novice">Novice</a>
-                <a href="#articles">Articles</a>
-                <a href="#about">About us</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="novice.html">Novice</a>
+                <a href="articles.html">Articles</a>
+                <a href="about.html">About us</a>
             </div>
         </button>
             <button onclick="alert('prijava')">prijava</button>
