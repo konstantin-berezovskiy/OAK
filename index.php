@@ -18,7 +18,7 @@
         </div>
         <!--header menu-->
         <div class="header-buttons" onclick="cross(this)">
-            <button id="dropdown">
+        <button id="dropdown">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -32,16 +32,8 @@
                 <a href="about.html">About us</a>
             </div>
         </button>
-            <button onclick="
-		    if (!isset($_SERVER['PHP_AUTH_USER'])) {
-	    header('WWW-Authenticate: Basic realm="My Realm"');
-	    header('HTTP/1.0 401 Unauthorized');
-	    echo 'Text to send if user hits Cancel button';
-			    exit;
-		} else {
-		    echo "<p>Hello {$_SERVER['PHP_AUTH_USER']}.</p>";
-		    echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
-		}">prijava</button>
+            <button onclick="AuthenticationForm()">prijava</button>
+		<p id="demo"></p>
         </div>
     </header>
 
@@ -61,5 +53,10 @@
     </footer>
 
     <script src="script.js"></script>
+<script>
+function AuthenticationForm() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
 </body>
 </html>
