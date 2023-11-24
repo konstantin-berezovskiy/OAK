@@ -19,23 +19,20 @@
         <!--header menu-->
         <div class="header-buttons" onclick="cross(this)">
         <button id="dropdown">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-
-            
-            <div class="dropdown-list" id="drop">
-                <a href="events.html">Events</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="novice.html">Novice</a>
-                <a href="articles.html">Articles</a>
-                <a href="about.html">About us</a>
-            </div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </button>
-            <button onclick="AuthenticationForm()">prijava</button>
-		<p id="demo"></p>
+        <div class="dropdown-list" id="drop">
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="novice.html">Novice</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">About us</a>
         </div>
-    </header>
+        <button onclick="AuthenticationForm()">prijava</button>
+    </div>
+</header>
 
     
     <main>
@@ -54,9 +51,9 @@
 
     <script src="script.js"></script>
 <script>
-function AuthenticationForm() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
+	function AuthenticationForm() {
+  		document.getElementById("demo").innerHTML = "Hello World";
+	}
 </script>
 </body>
 </html>
